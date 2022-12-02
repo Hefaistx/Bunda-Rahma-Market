@@ -32,5 +32,10 @@ namespace Bunda_Rahma_Market
             buttonDecor.ForeColor = Color.FromArgb(254, 153, 0);
         }
 
+        private void labelClear_Click(object sender, EventArgs e)
+        {
+            textboxUsername.Clear();
+            textboxPassword.Clear();
+        }
     }
 }
