@@ -31,7 +31,7 @@ namespace Bunda_Rahma_Market
             {
                 myProgressBar.Value = 0;
                 timer1.Stop();
-                loginForm LoginForm = new loginForm();
+                LoginForm LoginForm = new LoginForm();
                 this.Hide();
                 LoginForm.Show();
             }

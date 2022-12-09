@@ -1,6 +1,6 @@
 ﻿namespace Bunda_Rahma_Market
 {
-    partial class loginForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -196,7 +196,7 @@
             this.comboBox1.TabIndex = 10;
             this.comboBox1.Text = "Select Role";
             // 
-            // loginForm
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,7 +213,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonDecor);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
-            this.Name = "loginForm";
+            this.Name = "LoginForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
