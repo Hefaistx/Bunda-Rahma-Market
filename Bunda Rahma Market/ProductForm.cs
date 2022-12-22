@@ -108,8 +108,14 @@ namespace Bunda_Rahma_Market
                 MessageBox.Show(ex.Message);
             }
         }
-
-       
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+            idTextBox.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            nameTextBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            priceTextBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            quantityTextBox.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            categoryComboBox.SelectedValue = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+        }
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
@@ -144,20 +150,26 @@ namespace Bunda_Rahma_Market
 
         private void sellerButton_Click(object sender, EventArgs e)
         {
-
+            SellerForm seller = new SellerForm();
+            seller.Show();
+            this.Hide();
         }
 
         private void categoryButton_Click(object sender, EventArgs e)
         {
-
+            CategoryForm categoryz = new CategoryForm();
+            categoryz.Show();
+            this.Hide();
         }
 
         private void sellingButton_Click(object sender, EventArgs e)
         {
-
+            SellingForm selling = new SellingForm();
+            selling.Show();
+            this.Hide();
         }
 
-        private void dataGridView1_Click(object sender, EventArgs e)
+        private void dataGridView1_Click_1(object sender, EventArgs e)
         {
             idTextBox.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             nameTextBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
