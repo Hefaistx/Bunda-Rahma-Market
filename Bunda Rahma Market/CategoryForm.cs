@@ -36,8 +36,10 @@ namespace Bunda_Rahma_Market
                 SqlCommand command = new SqlCommand(insertQuery, DBCon.GetCon());
                 DBCon.OpenCon();
                 command.ExecuteNonQuery();
-                MessageBox.Show("Category added succesfully");
+                MessageBox.Show("Category added succesfully", "Add Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DBCon.CloseCon();
+                getTable();
+                clear();
             }
             catch (Exception ex)
             {
@@ -48,6 +50,121 @@ namespace Bunda_Rahma_Market
         private void CategoryForm_Load(object sender, EventArgs e)
         {
             getTable();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (idTextBox.Text == "" || nameTextBox.Text == "" || descriptionTextBox.Text == "")
+                {
+                    MessageBox.Show("Missing Information", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    string updateQuery = "UPDATE Category SET catName='" + nameTextBox.Text + "', catDesc='" + descriptionTextBox.Text + "', catId='" + idTextBox.Text + "'WHERE catId=" + idTextBox.Text + "";
+                    SqlCommand command = new SqlCommand(updateQuery, DBCon.GetCon());
+                    DBCon.OpenCon();
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Category Updated Successfully", "Update Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DBCon.CloseCon();
+                    getTable();
+                    clear();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+            idTextBox.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            nameTextBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            descriptionTextBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+        }
+
+        private void clear()
+        {
+            idTextBox.Clear();
+            nameTextBox.Clear();
+            descriptionTextBox.Clear();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string deleteQuery = "DELETE FROM Category WHERE catId=" + idTextBox.Text + "";
+                SqlCommand command = new SqlCommand(deleteQuery, DBCon.GetCon());
+                DBCon.OpenCon();
+                command.ExecuteNonQuery();
+                MessageBox.Show("Category Deleted Successfully", "Delete Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DBCon.CloseCon();
+                getTable();
+                clear();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void sellerButton_Click(object sender, EventArgs e)
+        {
+            SellerForm seller = new SellerForm();
+            seller.Show();
+            this.Hide();
+        }
+
+        private void productButton_Click(object sender, EventArgs e)
+        {
+            ProductForm product = new ProductForm();
+            product.Show();
+            this.Hide();
+        }
+
+        private void sellingButton_Click(object sender, EventArgs e)
+        {
+            SellingForm selling = new SellingForm();
+            selling.Show();
+            this.Hide();
+        }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.Show();
+            this.Hide();
+        }
+
+        private void sellerButton_MouseEnter(object sender, EventArgs e)
+        {
+            sellerButton.ForeColor = Color.Red;
+        }
+        private void sellerButton_MouseLeave(object sender, EventArgs e)
+        {
+            sellerButton.ForeColor = Color.FromArgb(254, 153, 0);
+        }
+
+        private void productButton_MouseEnter(object sender, EventArgs e)
+        {
+            productButton.ForeColor = Color.Red;
+        }
+        private void productButton_MouseLeave(object sender, EventArgs e)
+        {
+            productButton.ForeColor = Color.FromArgb(254, 153, 0);
+        }
+
+        private void sellingButton_MouseEnter(object sender, EventArgs e)
+        {
+            sellingButton.ForeColor = Color.Red;
+        }
+        private void sellingButton_MouseLeave(object sender, EventArgs e)
+        {
+            sellingButton.ForeColor = Color.FromArgb(254, 153, 0);
         }
     }
 }

@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textboxUsername = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.textboxPassword = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.siticoneButton1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.loginButton = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.label3 = new System.Windows.Forms.Label();
             this.labelClear = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -117,21 +117,21 @@
             this.textboxPassword.Size = new System.Drawing.Size(132, 18);
             this.textboxPassword.TabIndex = 4;
             // 
-            // siticoneButton1
+            // loginButton
             // 
-            this.siticoneButton1.BorderRadius = 15;
-            this.siticoneButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.Location = new System.Drawing.Point(420, 266);
-            this.siticoneButton1.Name = "siticoneButton1";
-            this.siticoneButton1.Size = new System.Drawing.Size(108, 30);
-            this.siticoneButton1.TabIndex = 5;
-            this.siticoneButton1.Text = "LOGIN";
+            this.loginButton.BorderRadius = 15;
+            this.loginButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.loginButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.loginButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.loginButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.loginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
+            this.loginButton.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.ForeColor = System.Drawing.Color.White;
+            this.loginButton.Location = new System.Drawing.Point(420, 266);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(108, 30);
+            this.loginButton.TabIndex = 5;
+            this.loginButton.Text = "LOGIN";
             // 
             // label3
             // 
@@ -206,7 +206,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.labelClear);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.siticoneButton1);
+            this.Controls.Add(this.loginButton);
             this.Controls.Add(this.textboxPassword);
             this.Controls.Add(this.textboxUsername);
             this.Controls.Add(this.label2);
@@ -227,7 +227,7 @@
         private System.Windows.Forms.Label label2;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox textboxUsername;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox textboxPassword;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton siticoneButton1;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton loginButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelClear;
         private System.Windows.Forms.Label label5;
