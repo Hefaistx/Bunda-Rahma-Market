@@ -16,7 +16,7 @@ namespace Bunda_Rahma_Market
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new splashForm());
+            Application.Run(new CategoryForm());
         }
     }
 }
