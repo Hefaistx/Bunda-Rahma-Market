@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Bunda_Rahma_Market
 {
-    public partial class SellerForm : Form
+    public partial class ProductForm : Form
     {
-        public SellerForm()
+        public ProductForm()
         {
             InitializeComponent();
         }
+
     }
 }

@@ -45,7 +45,7 @@
             this.siticoneButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.siticoneButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.siticoneButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton1.FillColor = System.Drawing.Color.White;
+            this.siticoneButton1.FillColor = System.Drawing.Color.Black;
             this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton1.ForeColor = System.Drawing.Color.White;
             this.siticoneButton1.Location = new System.Drawing.Point(-76, 307);
@@ -56,13 +56,13 @@
             // 
             // siticoneButton2
             // 
-            this.siticoneButton2.BackColor = System.Drawing.Color.White;
+            this.siticoneButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
             this.siticoneButton2.BorderRadius = 10;
             this.siticoneButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.siticoneButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.siticoneButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.siticoneButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton2.FillColor = System.Drawing.Color.White;
+            this.siticoneButton2.FillColor = System.Drawing.Color.Black;
             this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton2.ForeColor = System.Drawing.Color.White;
             this.siticoneButton2.Location = new System.Drawing.Point(44, 293);
@@ -73,14 +73,14 @@
             // 
             // siticoneButton3
             // 
-            this.siticoneButton3.BackColor = System.Drawing.Color.White;
+            this.siticoneButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
             this.siticoneButton3.BorderColor = System.Drawing.Color.White;
             this.siticoneButton3.BorderRadius = 10;
             this.siticoneButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.siticoneButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.siticoneButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.siticoneButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton3.FillColor = System.Drawing.Color.White;
+            this.siticoneButton3.FillColor = System.Drawing.Color.Black;
             this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton3.ForeColor = System.Drawing.Color.White;
             this.siticoneButton3.Location = new System.Drawing.Point(93, 276);
@@ -91,14 +91,14 @@
             // 
             // siticoneButton4
             // 
-            this.siticoneButton4.BackColor = System.Drawing.Color.White;
+            this.siticoneButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
             this.siticoneButton4.BorderColor = System.Drawing.Color.White;
             this.siticoneButton4.BorderRadius = 10;
             this.siticoneButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.siticoneButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.siticoneButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.siticoneButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton4.FillColor = System.Drawing.Color.White;
+            this.siticoneButton4.FillColor = System.Drawing.Color.Black;
             this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton4.ForeColor = System.Drawing.Color.White;
             this.siticoneButton4.Location = new System.Drawing.Point(142, 259);
@@ -109,20 +109,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Google Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(117, 82);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(138, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(346, 26);
+            this.label1.Size = new System.Drawing.Size(316, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "Minimarket Management System";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Google Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(196, 26);
+            this.label2.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(115, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 34);
+            this.label2.Size = new System.Drawing.Size(354, 33);
             this.label2.TabIndex = 5;
             this.label2.Text = "Bunda Rahma";
             // 
