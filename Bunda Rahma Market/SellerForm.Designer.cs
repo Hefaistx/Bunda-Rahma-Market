@@ -337,6 +337,8 @@
             this.Controls.Add(this.productButton);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(1100, 650);
+            this.MinimumSize = new System.Drawing.Size(1100, 650);
             this.Name = "SellerForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

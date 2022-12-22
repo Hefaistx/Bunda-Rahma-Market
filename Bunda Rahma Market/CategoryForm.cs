@@ -166,5 +166,32 @@ namespace Bunda_Rahma_Market
         {
             sellingButton.ForeColor = Color.FromArgb(254, 153, 0);
         }
+
+        private void label3_MouseEnter(object sender, EventArgs e)
+        {
+            label3.ForeColor = Color.Red;
+        }
+        private void label3_MouseLeave(object sender, EventArgs e)
+        {
+            label3.ForeColor = Color.White;
+        }
+
+        private void label7_MouseEnter(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.Red;
+        }
+        private void label7_MouseLeave(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.White;
+        }
+
+        private void label8_MouseEnter(object sender, EventArgs e)
+        {
+            label8.ForeColor = Color.Red;
+        }
+        private void label8_MouseLeave(object sender, EventArgs e)
+        {
+            label8.ForeColor = Color.White;
+        }
     }
 }

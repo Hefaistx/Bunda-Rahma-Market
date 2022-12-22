@@ -29,25 +29,27 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.refreshButton = new System.Windows.Forms.Label();
+            this.searchComboBox = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
+            this.categoryComboBox = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.deleteButton = new System.Windows.Forms.Label();
+            this.updateButton = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.addButton = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.siticoneTextBox4 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.siticoneTextBox3 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.siticoneTextBox2 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.siticoneTextBox1 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.idTextBox = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.nameTextBox = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.priceTextBox = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.quantityTextBox = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.sellerButton = new System.Windows.Forms.Label();
             this.categoryButton = new System.Windows.Forms.Label();
             this.sellingButton = new System.Windows.Forms.Label();
             this.logoutButton = new System.Windows.Forms.Label();
-            this.siticoneComboBox1 = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -55,25 +57,69 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.siticoneComboBox1);
+            this.panel1.Controls.Add(this.refreshButton);
+            this.panel1.Controls.Add(this.searchComboBox);
+            this.panel1.Controls.Add(this.categoryComboBox);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.deleteButton);
+            this.panel1.Controls.Add(this.updateButton);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.addButton);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.siticoneTextBox4);
-            this.panel1.Controls.Add(this.siticoneTextBox3);
-            this.panel1.Controls.Add(this.siticoneTextBox2);
-            this.panel1.Controls.Add(this.siticoneTextBox1);
+            this.panel1.Controls.Add(this.idTextBox);
+            this.panel1.Controls.Add(this.nameTextBox);
+            this.panel1.Controls.Add(this.priceTextBox);
+            this.panel1.Controls.Add(this.quantityTextBox);
             this.panel1.Location = new System.Drawing.Point(123, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(949, 597);
             this.panel1.TabIndex = 13;
+            // 
+            // refreshButton
+            // 
+            this.refreshButton.AutoSize = true;
+            this.refreshButton.Font = new System.Drawing.Font("Google Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshButton.ForeColor = System.Drawing.Color.White;
+            this.refreshButton.Location = new System.Drawing.Point(715, 70);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(65, 18);
+            this.refreshButton.TabIndex = 32;
+            this.refreshButton.Text = "Refresh";
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            // 
+            // searchComboBox
+            // 
+            this.searchComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.searchComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.searchComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.searchComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.searchComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.searchComboBox.ItemHeight = 30;
+            this.searchComboBox.Location = new System.Drawing.Point(532, 61);
+            this.searchComboBox.Name = "searchComboBox";
+            this.searchComboBox.Size = new System.Drawing.Size(157, 36);
+            this.searchComboBox.TabIndex = 31;
+            // 
+            // categoryComboBox
+            // 
+            this.categoryComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.categoryComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.categoryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.categoryComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.categoryComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.categoryComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.categoryComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.categoryComboBox.ItemHeight = 30;
+            this.categoryComboBox.Location = new System.Drawing.Point(111, 271);
+            this.categoryComboBox.Name = "categoryComboBox";
+            this.categoryComboBox.Size = new System.Drawing.Size(157, 36);
+            this.categoryComboBox.TabIndex = 30;
             // 
             // label10
             // 
@@ -89,33 +135,36 @@
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersHeight = 24;
             this.dataGridView1.Location = new System.Drawing.Point(383, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(556, 479);
-            this.dataGridView1.TabIndex = 25;
+            this.dataGridView1.TabIndex = 30;
+            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
-            // label8
+            // deleteButton
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Google Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(245, 332);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 18);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Delete";
+            this.deleteButton.AutoSize = true;
+            this.deleteButton.Font = new System.Drawing.Font("Google Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteButton.ForeColor = System.Drawing.Color.White;
+            this.deleteButton.Location = new System.Drawing.Point(245, 332);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(56, 18);
+            this.deleteButton.TabIndex = 24;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
-            // label7
+            // updateButton
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Google Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(159, 332);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 18);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Update";
+            this.updateButton.AutoSize = true;
+            this.updateButton.Font = new System.Drawing.Font("Google Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.ForeColor = System.Drawing.Color.White;
+            this.updateButton.Location = new System.Drawing.Point(159, 332);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(59, 18);
+            this.updateButton.TabIndex = 23;
+            this.updateButton.Text = "Update";
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // label6
             // 
@@ -150,16 +199,17 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "Name";
             // 
-            // label3
+            // addButton
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Google Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(91, 332);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 18);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Add";
+            this.addButton.AutoSize = true;
+            this.addButton.Font = new System.Drawing.Font("Google Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.ForeColor = System.Drawing.Color.White;
+            this.addButton.Location = new System.Drawing.Point(91, 332);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(37, 18);
+            this.addButton.TabIndex = 19;
+            this.addButton.Text = "Add";
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // label2
             // 
@@ -183,85 +233,85 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "ID";
             // 
-            // siticoneTextBox4
+            // idTextBox
             // 
-            this.siticoneTextBox4.BorderRadius = 15;
-            this.siticoneTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox4.DefaultText = "";
-            this.siticoneTextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox4.Location = new System.Drawing.Point(111, 103);
-            this.siticoneTextBox4.Name = "siticoneTextBox4";
-            this.siticoneTextBox4.PasswordChar = '\0';
-            this.siticoneTextBox4.PlaceholderText = "";
-            this.siticoneTextBox4.SelectedText = "";
-            this.siticoneTextBox4.Size = new System.Drawing.Size(157, 26);
-            this.siticoneTextBox4.TabIndex = 16;
+            this.idTextBox.BorderRadius = 15;
+            this.idTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.idTextBox.DefaultText = "";
+            this.idTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.idTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.idTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.idTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.idTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.idTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.idTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.idTextBox.Location = new System.Drawing.Point(111, 103);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.PasswordChar = '\0';
+            this.idTextBox.PlaceholderText = "";
+            this.idTextBox.SelectedText = "";
+            this.idTextBox.Size = new System.Drawing.Size(157, 26);
+            this.idTextBox.TabIndex = 16;
             // 
-            // siticoneTextBox3
+            // nameTextBox
             // 
-            this.siticoneTextBox3.BorderRadius = 15;
-            this.siticoneTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox3.DefaultText = "";
-            this.siticoneTextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox3.Location = new System.Drawing.Point(111, 144);
-            this.siticoneTextBox3.Name = "siticoneTextBox3";
-            this.siticoneTextBox3.PasswordChar = '\0';
-            this.siticoneTextBox3.PlaceholderText = "";
-            this.siticoneTextBox3.SelectedText = "";
-            this.siticoneTextBox3.Size = new System.Drawing.Size(157, 26);
-            this.siticoneTextBox3.TabIndex = 15;
+            this.nameTextBox.BorderRadius = 15;
+            this.nameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nameTextBox.DefaultText = "";
+            this.nameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.nameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.nameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.nameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nameTextBox.Location = new System.Drawing.Point(111, 144);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.PasswordChar = '\0';
+            this.nameTextBox.PlaceholderText = "";
+            this.nameTextBox.SelectedText = "";
+            this.nameTextBox.Size = new System.Drawing.Size(157, 26);
+            this.nameTextBox.TabIndex = 15;
             // 
-            // siticoneTextBox2
+            // priceTextBox
             // 
-            this.siticoneTextBox2.BorderRadius = 15;
-            this.siticoneTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox2.DefaultText = "";
-            this.siticoneTextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.Location = new System.Drawing.Point(111, 186);
-            this.siticoneTextBox2.Name = "siticoneTextBox2";
-            this.siticoneTextBox2.PasswordChar = '\0';
-            this.siticoneTextBox2.PlaceholderText = "";
-            this.siticoneTextBox2.SelectedText = "";
-            this.siticoneTextBox2.Size = new System.Drawing.Size(157, 26);
-            this.siticoneTextBox2.TabIndex = 14;
+            this.priceTextBox.BorderRadius = 15;
+            this.priceTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.priceTextBox.DefaultText = "";
+            this.priceTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.priceTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.priceTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.priceTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.priceTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.priceTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.priceTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.priceTextBox.Location = new System.Drawing.Point(111, 186);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.PasswordChar = '\0';
+            this.priceTextBox.PlaceholderText = "";
+            this.priceTextBox.SelectedText = "";
+            this.priceTextBox.Size = new System.Drawing.Size(157, 26);
+            this.priceTextBox.TabIndex = 14;
             // 
-            // siticoneTextBox1
+            // quantityTextBox
             // 
-            this.siticoneTextBox1.BorderRadius = 15;
-            this.siticoneTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox1.DefaultText = "";
-            this.siticoneTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneTextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.Location = new System.Drawing.Point(111, 229);
-            this.siticoneTextBox1.Name = "siticoneTextBox1";
-            this.siticoneTextBox1.PasswordChar = '\0';
-            this.siticoneTextBox1.PlaceholderText = "";
-            this.siticoneTextBox1.SelectedText = "";
-            this.siticoneTextBox1.Size = new System.Drawing.Size(157, 26);
-            this.siticoneTextBox1.TabIndex = 13;
+            this.quantityTextBox.BorderRadius = 15;
+            this.quantityTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.quantityTextBox.DefaultText = "";
+            this.quantityTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.quantityTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.quantityTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.quantityTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.quantityTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.quantityTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.quantityTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.quantityTextBox.Location = new System.Drawing.Point(111, 229);
+            this.quantityTextBox.Name = "quantityTextBox";
+            this.quantityTextBox.PasswordChar = '\0';
+            this.quantityTextBox.PlaceholderText = "";
+            this.quantityTextBox.SelectedText = "";
+            this.quantityTextBox.Size = new System.Drawing.Size(157, 26);
+            this.quantityTextBox.TabIndex = 13;
             // 
             // sellerButton
             // 
@@ -273,6 +323,7 @@
             this.sellerButton.Size = new System.Drawing.Size(61, 23);
             this.sellerButton.TabIndex = 30;
             this.sellerButton.Text = "Seller";
+            this.sellerButton.Click += new System.EventHandler(this.sellerButton_Click);
             // 
             // categoryButton
             // 
@@ -284,6 +335,7 @@
             this.categoryButton.Size = new System.Drawing.Size(97, 23);
             this.categoryButton.TabIndex = 31;
             this.categoryButton.Text = "Category";
+            this.categoryButton.Click += new System.EventHandler(this.categoryButton_Click);
             // 
             // sellingButton
             // 
@@ -295,6 +347,7 @@
             this.sellingButton.Size = new System.Drawing.Size(70, 23);
             this.sellingButton.TabIndex = 32;
             this.sellingButton.Text = "Selling";
+            this.sellingButton.Click += new System.EventHandler(this.sellingButton_Click);
             // 
             // logoutButton
             // 
@@ -307,21 +360,6 @@
             this.logoutButton.TabIndex = 33;
             this.logoutButton.Text = "Logout";
             // 
-            // siticoneComboBox1
-            // 
-            this.siticoneComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.siticoneComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.siticoneComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.siticoneComboBox1.ItemHeight = 30;
-            this.siticoneComboBox1.Location = new System.Drawing.Point(111, 271);
-            this.siticoneComboBox1.Name = "siticoneComboBox1";
-            this.siticoneComboBox1.Size = new System.Drawing.Size(157, 36);
-            this.siticoneComboBox1.TabIndex = 30;
-            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,8 +370,11 @@
             this.Controls.Add(this.categoryButton);
             this.Controls.Add(this.sellerButton);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(1100, 650);
+            this.MinimumSize = new System.Drawing.Size(1100, 650);
             this.Name = "ProductForm";
             this.Text = "sellerForm";
+            this.Load += new System.EventHandler(this.ProductForm_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -344,17 +385,17 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox4;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox3;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox2;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox idTextBox;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox nameTextBox;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox priceTextBox;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox quantityTextBox;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label deleteButton;
+        private System.Windows.Forms.Label updateButton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label addButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
@@ -362,6 +403,8 @@
         private System.Windows.Forms.Label categoryButton;
         private System.Windows.Forms.Label sellingButton;
         private System.Windows.Forms.Label logoutButton;
-        private Siticone.Desktop.UI.WinForms.SiticoneComboBox siticoneComboBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneComboBox categoryComboBox;
+        private System.Windows.Forms.Label refreshButton;
+        private Siticone.Desktop.UI.WinForms.SiticoneComboBox searchComboBox;
     }
 }
