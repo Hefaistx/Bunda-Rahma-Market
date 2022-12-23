@@ -108,14 +108,7 @@ namespace Bunda_Rahma_Market
                 MessageBox.Show(ex.Message);
             }
         }
-        private void dataGridView1_Click(object sender, EventArgs e)
-        {
-            idTextBox.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            nameTextBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            priceTextBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            quantityTextBox.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            categoryComboBox.SelectedValue = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-        }
+        
 
         private void deleteButton_Click(object sender, EventArgs e)
         {

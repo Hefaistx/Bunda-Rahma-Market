@@ -130,5 +130,96 @@ namespace Bunda_Rahma_Market
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void productButton_Click(object sender, EventArgs e)
+        {
+            ProductForm product = new ProductForm();
+            product.Show();
+            this.Hide();
+        }
+
+        private void categoryButton_Click(object sender, EventArgs e)
+        {
+            CategoryForm category = new CategoryForm();
+            category.Show();
+            this.Hide();
+        }
+
+        private void sellingButton_Click(object sender, EventArgs e)
+        {
+            SellingForm selling = new SellingForm();
+            selling.Show();
+            this.Hide();
+        }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.Show();
+            this.Hide();
+        }
+
+        private void productButton_MouseEnter(object sender, EventArgs e)
+        {
+            productButton.ForeColor = Color.Pink;
+        }
+        private void productButton_MouseLeave(object sender, EventArgs e)
+        {
+            productButton.ForeColor = Color.FromArgb(254, 153, 0);
+        }
+
+        private void categoryButton_MouseEnter(object sender, EventArgs e)
+        {
+            categoryButton.ForeColor = Color.Pink;
+        }
+        private void categoryButton_MouseLeave(object sender, EventArgs e)
+        {
+            categoryButton.ForeColor = Color.FromArgb(254, 153, 0);
+        }
+
+        private void sellingButton_MouseEnter(object sender, EventArgs e)
+        {
+            sellingButton.ForeColor = Color.Pink;
+        }
+        private void sellingButton_MouseLeave(object sender, EventArgs e)
+        {
+            sellingButton.ForeColor = Color.FromArgb(254, 153, 0);
+        }
+
+        private void logoutButton_MouseEnter(object sender, EventArgs e)
+        {
+            logoutButton.ForeColor = Color.Pink;
+        }
+        private void logoutButton_MouseLeave(object sender, EventArgs e)
+        {
+           logoutButton.ForeColor = Color.FromArgb(254, 153, 0);
+        }
+
+        private void label3_MouseEnter(object sender, EventArgs e)
+        {
+            label3.ForeColor = Color.Pink;
+        }
+        private void label3_MouseLeave(object sender, EventArgs e)
+        {
+            label3.ForeColor = Color.White;
+        }
+
+        private void label7_MouseEnter(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.Pink;
+        }
+        private void label7_MouseLeave(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.White;
+        }
+
+        private void label8_MouseEnter(object sender, EventArgs e)
+        {
+            label8.ForeColor = Color.Pink;
+        }
+        private void label8_MouseLeave(object sender, EventArgs e)
+        {
+            label8.ForeColor = Color.White;
+        }
     }
 }

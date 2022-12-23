@@ -111,7 +111,7 @@
             this.textboxPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textboxPassword.Location = new System.Drawing.Point(408, 205);
             this.textboxPassword.Name = "textboxPassword";
-            this.textboxPassword.PasswordChar = 'w';
+            this.textboxPassword.PasswordChar = '\0';
             this.textboxPassword.PlaceholderText = "";
             this.textboxPassword.SelectedText = "";
             this.textboxPassword.Size = new System.Drawing.Size(132, 18);
@@ -132,6 +132,7 @@
             this.loginButton.Size = new System.Drawing.Size(108, 30);
             this.loginButton.TabIndex = 5;
             this.loginButton.Text = "LOGIN";
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // label3
             // 
@@ -188,8 +189,8 @@
             this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
-            "Seller"});
+            "ADMIN",
+            "SELLER"});
             this.comboBox1.Location = new System.Drawing.Point(408, 93);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(132, 28);

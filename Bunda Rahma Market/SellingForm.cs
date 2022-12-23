@@ -37,9 +37,9 @@ namespace Bunda_Rahma_Market
             string selectQuerry = "SELECT prodName, prodPrice FROM Products";
             SqlCommand command = new SqlCommand(selectQuerry, DBCon.GetCon());
             SqlDataAdapter adapter = new SqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            productDataGridView.DataSource = table;
+            DataTable tabled = new DataTable();
+            adapter.Fill(tabled);
+            productDataGridView.DataSource = tabled;
         }
         private void getSellTable()
         {
@@ -60,16 +60,10 @@ namespace Bunda_Rahma_Market
             getSellTable();
         }
 
-        private void productDataGridView_Click(object sender, EventArgs e)
-        {
-            idTextBox.Text = productDataGridView.SelectedRows[0].Cells[0].Value.ToString();
-            nameTextBox.Text = productDataGridView.SelectedRows[0].Cells[1].Value.ToString();
-        }
-        int grandTotal = 0, n = 0;
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            printer.Title = "Mdemy MiniMarket Sell Lists";
+            printer.Title = "Bunda Rahma market sell list";
             printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
             printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             printer.PageNumbers = true;
@@ -92,8 +86,18 @@ namespace Bunda_Rahma_Market
             productDataGridView.DataSource = table;
         }
 
+        private void dataGridView1_Click_1(object sender, EventArgs e)
+        {
+            idTextBox.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            nameTextBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            priceTextBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            categoryComboBox.SelectedValue = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+        }
+        int grandTotal = 0;
+        int n = 0;
         private void deleteButton_Click(object sender, EventArgs e)
         {
+
             if (idTextBox.Text == "" || priceTextBox.Text == "")
             {
                 MessageBox.Show("Missing Information", "Information Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -114,6 +118,12 @@ namespace Bunda_Rahma_Market
             }
         }
 
+        private void productDataGridView_Click(object sender, EventArgs e)
+        {
+            idTextBox.Text = productDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            nameTextBox.Text = productDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+        }
+
         private void addButton_Click(object sender, EventArgs e)
         {
             try
@@ -132,6 +142,64 @@ namespace Bunda_Rahma_Market
             }
         }
 
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.Show();
+            this.Hide();
+        }
 
+        private void logoutButton_MouseEnter(object sender, EventArgs e)
+        {
+            logoutButton.ForeColor = Color.HotPink;
+        }
+
+        private void logoutButton_MouseLeave(object sender, EventArgs e)
+        {
+            logoutButton.ForeColor = Color.FromArgb(254, 153, 0);
+        }
+
+        private void deleteButton_MouseEnter(object sender, EventArgs e)
+        {
+            deleteButton.ForeColor = Color.Pink;
+        }
+
+        private void deleteButton_MouseLeave(object sender, EventArgs e)
+        {
+            deleteButton.ForeColor = Color.White;
+        }
+
+        private void label5_MouseEnter(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.Pink;
+        }
+
+        private void label5_MouseLeave(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.White;
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            getTable();
+        }
+
+        private void addButton_MouseEnter(object sender, EventArgs e)
+        {
+            addButton.ForeColor = Color.Pink;
+        }
+        private void addButton_MouseLeave(object sender, EventArgs e)
+        {
+            addButton.ForeColor = Color.White;
+        }
+
+        private void updateButton_MouseEnter(object sender, EventArgs e)
+        {
+            updateButton.ForeColor = Color.Pink;
+        }
+        private void updateButton_MouseLeave(object sender, EventArgs e)
+        {
+            updateButton.ForeColor = Color.White;
+        }
     }
 }

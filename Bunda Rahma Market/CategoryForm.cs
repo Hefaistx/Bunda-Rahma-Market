@@ -142,7 +142,7 @@ namespace Bunda_Rahma_Market
 
         private void sellerButton_MouseEnter(object sender, EventArgs e)
         {
-            sellerButton.ForeColor = Color.Red;
+            sellerButton.ForeColor = Color.Pink;
         }
         private void sellerButton_MouseLeave(object sender, EventArgs e)
         {
@@ -151,7 +151,7 @@ namespace Bunda_Rahma_Market
 
         private void productButton_MouseEnter(object sender, EventArgs e)
         {
-            productButton.ForeColor = Color.Red;
+            productButton.ForeColor = Color.Pink;
         }
         private void productButton_MouseLeave(object sender, EventArgs e)
         {
@@ -160,7 +160,7 @@ namespace Bunda_Rahma_Market
 
         private void sellingButton_MouseEnter(object sender, EventArgs e)
         {
-            sellingButton.ForeColor = Color.Red;
+            sellingButton.ForeColor = Color.Pink;
         }
         private void sellingButton_MouseLeave(object sender, EventArgs e)
         {
@@ -169,7 +169,7 @@ namespace Bunda_Rahma_Market
 
         private void label3_MouseEnter(object sender, EventArgs e)
         {
-            label3.ForeColor = Color.Red;
+            label3.ForeColor = Color.Pink;
         }
         private void label3_MouseLeave(object sender, EventArgs e)
         {
