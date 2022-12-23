@@ -48,7 +48,7 @@
             this.siticoneButton1.FillColor = System.Drawing.Color.Black;
             this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton1.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.Location = new System.Drawing.Point(-76, 307);
+            this.siticoneButton1.Location = new System.Drawing.Point(-76, 311);
             this.siticoneButton1.Name = "siticoneButton1";
             this.siticoneButton1.Size = new System.Drawing.Size(662, 102);
             this.siticoneButton1.TabIndex = 0;
@@ -65,7 +65,7 @@
             this.siticoneButton2.FillColor = System.Drawing.Color.Black;
             this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton2.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton2.Location = new System.Drawing.Point(44, 293);
+            this.siticoneButton2.Location = new System.Drawing.Point(44, 297);
             this.siticoneButton2.Name = "siticoneButton2";
             this.siticoneButton2.Size = new System.Drawing.Size(500, 102);
             this.siticoneButton2.TabIndex = 1;
@@ -83,7 +83,7 @@
             this.siticoneButton3.FillColor = System.Drawing.Color.Black;
             this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton3.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton3.Location = new System.Drawing.Point(93, 276);
+            this.siticoneButton3.Location = new System.Drawing.Point(93, 280);
             this.siticoneButton3.Name = "siticoneButton3";
             this.siticoneButton3.Size = new System.Drawing.Size(400, 102);
             this.siticoneButton3.TabIndex = 2;
@@ -101,7 +101,7 @@
             this.siticoneButton4.FillColor = System.Drawing.Color.Black;
             this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton4.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton4.Location = new System.Drawing.Point(142, 259);
+            this.siticoneButton4.Location = new System.Drawing.Point(142, 265);
             this.siticoneButton4.Name = "siticoneButton4";
             this.siticoneButton4.Size = new System.Drawing.Size(300, 102);
             this.siticoneButton4.TabIndex = 3;

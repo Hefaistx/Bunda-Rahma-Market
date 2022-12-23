@@ -30,10 +30,6 @@ namespace Bunda_Rahma_Market
             labelClear.ForeColor = Color.FromArgb(254, 153, 0);
         }
 
-        private void buttonDecor_MouseEnter(object sender, EventArgs e)
-        {
-            buttonDecor.ForeColor = Color.FromArgb(254, 153, 0);
-        }
 
         private void labelClear_Click(object sender, EventArgs e)
         {
@@ -91,6 +87,11 @@ namespace Bunda_Rahma_Market
                     MessageBox.Show("Please Select Role", "Wrong Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }

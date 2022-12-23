@@ -180,5 +180,14 @@ namespace Bunda_Rahma_Market
             adapter.Fill(table);
             dataGridView1.DataSource = table;
         }
+
+        private void refreshButton_MouseEnter(object sender, EventArgs e)
+        {
+            refreshButton.ForeColor = Color.Pink;
+        }
+        private void refreshButton_MouseLeave(object sender, EventArgs e)
+        {
+            refreshButton.ForeColor = Color.White;
+        }
     }
 }

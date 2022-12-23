@@ -90,11 +90,6 @@ namespace Bunda_Rahma_Market
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGridView1_Click_1(object sender, EventArgs e)
-        {
             idTextBox.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             nameTextBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             ageTextBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
@@ -161,7 +156,7 @@ namespace Bunda_Rahma_Market
 
         private void productButton_MouseEnter(object sender, EventArgs e)
         {
-            productButton.ForeColor = Color.Pink;
+            productButton.ForeColor = Color.DeepPink;
         }
         private void productButton_MouseLeave(object sender, EventArgs e)
         {
@@ -170,7 +165,7 @@ namespace Bunda_Rahma_Market
 
         private void categoryButton_MouseEnter(object sender, EventArgs e)
         {
-            categoryButton.ForeColor = Color.Pink;
+            categoryButton.ForeColor = Color.DeepPink;
         }
         private void categoryButton_MouseLeave(object sender, EventArgs e)
         {
@@ -179,7 +174,7 @@ namespace Bunda_Rahma_Market
 
         private void sellingButton_MouseEnter(object sender, EventArgs e)
         {
-            sellingButton.ForeColor = Color.Pink;
+            sellingButton.ForeColor = Color.DeepPink;
         }
         private void sellingButton_MouseLeave(object sender, EventArgs e)
         {
@@ -188,7 +183,7 @@ namespace Bunda_Rahma_Market
 
         private void logoutButton_MouseEnter(object sender, EventArgs e)
         {
-            logoutButton.ForeColor = Color.Pink;
+            logoutButton.ForeColor = Color.Red;
         }
         private void logoutButton_MouseLeave(object sender, EventArgs e)
         {
@@ -197,7 +192,7 @@ namespace Bunda_Rahma_Market
 
         private void label3_MouseEnter(object sender, EventArgs e)
         {
-            label3.ForeColor = Color.Pink;
+            label3.ForeColor = Color.DeepPink;
         }
         private void label3_MouseLeave(object sender, EventArgs e)
         {
@@ -206,7 +201,7 @@ namespace Bunda_Rahma_Market
 
         private void label7_MouseEnter(object sender, EventArgs e)
         {
-            label7.ForeColor = Color.Pink;
+            label7.ForeColor = Color.DeepPink;
         }
         private void label7_MouseLeave(object sender, EventArgs e)
         {
@@ -215,7 +210,7 @@ namespace Bunda_Rahma_Market
 
         private void label8_MouseEnter(object sender, EventArgs e)
         {
-            label8.ForeColor = Color.Pink;
+            label8.ForeColor = Color.DeepPink;
         }
         private void label8_MouseLeave(object sender, EventArgs e)
         {

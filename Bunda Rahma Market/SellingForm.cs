@@ -76,28 +76,12 @@ namespace Bunda_Rahma_Market
             printer.PrintDataGridView(sellDataGridView);
         }
 
-        private void categoryComboBox_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            string selectQuerry = "SELECT prodName, prodPrice FROM Products WHERE prodCat='" + categoryComboBox.SelectedValue.ToString() + "'";
-            SqlCommand command = new SqlCommand(selectQuerry, DBCon.GetCon());
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            productDataGridView.DataSource = table;
-        }
+  
 
-        private void dataGridView1_Click_1(object sender, EventArgs e)
-        {
-            idTextBox.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            nameTextBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            priceTextBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            categoryComboBox.SelectedValue = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-        }
         int grandTotal = 0;
         int n = 0;
         private void deleteButton_Click(object sender, EventArgs e)
         {
-
             if (idTextBox.Text == "" || priceTextBox.Text == "")
             {
                 MessageBox.Show("Missing Information", "Information Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -106,17 +90,18 @@ namespace Bunda_Rahma_Market
             {
                 int Total = Convert.ToInt32(nameTextBox.Text) * Convert.ToInt32(priceTextBox.Text);
                 DataGridViewRow addRow = new DataGridViewRow();
-                addRow.CreateCells(dataGridView1);
-                addRow.Cells[0].Value = ++n;
+                addRow.CreateCells(DataGridView1);
+                addRow.Cells[0].Value = n + 1;
                 addRow.Cells[1].Value = idTextBox.Text;
                 addRow.Cells[2].Value = nameTextBox.Text;
                 addRow.Cells[3].Value = priceTextBox.Text;
                 addRow.Cells[4].Value = Total;
-                dataGridView1.Rows.Add(addRow);
+                DataGridView1.Rows.Add(addRow);
                 grandTotal += Total;
                 label3.Text = grandTotal + " Ks";
             }
         }
+
 
         private void productDataGridView_Click(object sender, EventArgs e)
         {
@@ -201,5 +186,24 @@ namespace Bunda_Rahma_Market
         {
             updateButton.ForeColor = Color.White;
         }
+
+        private void DataGridView1_Click(object sender, EventArgs e)
+        {
+            idTextBox.Text = DataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            nameTextBox.Text = DataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            priceTextBox.Text = DataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            categoryComboBox.SelectedValue = DataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+        }
+
+        private void categoryComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string selectQuerry = "SELECT prodName, prodPrice FROM Products WHERE prodCat='" + categoryComboBox.SelectedValue.ToString() + "'";
+            SqlCommand command = new SqlCommand(selectQuerry, DBCon.GetCon());
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            productDataGridView.DataSource = table;
+        }
+
     }
 }

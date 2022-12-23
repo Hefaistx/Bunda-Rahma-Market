@@ -193,5 +193,14 @@ namespace Bunda_Rahma_Market
         {
             label8.ForeColor = Color.White;
         }
+
+        private void logoutButton_MouseEnter(object sender, EventArgs e)
+        {
+            logoutButton.ForeColor = Color.HotPink;
+        }
+        private void logoutButton_MouseLeave(object sender, EventArgs e)
+        {
+            logoutButton.ForeColor = Color.White;
+        }
     }
 }
