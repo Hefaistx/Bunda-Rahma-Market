@@ -77,6 +77,7 @@
       <DependentUpon>CategoryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="SellerForm.cs">
       <SubType>Form</SubType>
     </Compile>

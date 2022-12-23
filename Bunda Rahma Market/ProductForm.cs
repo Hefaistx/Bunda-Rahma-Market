@@ -177,5 +177,15 @@ namespace Bunda_Rahma_Market
             quantityTextBox.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             categoryComboBox.SelectedValue = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
         }
+
+        private void searchComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string selectQuerry = "SELECT * FROM Products WHERE prodCat='" + searchComboBox.SelectedValue.ToString() + "'";
+            SqlCommand command = new SqlCommand(selectQuerry, DBCon.GetCon());
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dataGridView1.DataSource = table;
+        }
     }
 }
